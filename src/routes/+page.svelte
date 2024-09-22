@@ -32,12 +32,13 @@
     }
 
     body {
-        font-family: 'Lexend', sans-serif;
         background-color: #121212;
         color: #f0f0f0;
     }
 
     .title {
+        font-family: 'Lexend', sans-serif;
+
         text-align: center;
         font-size: 2rem;
         margin: 20px 0;
@@ -55,6 +56,7 @@
     }
 
     .element {
+        font-family: 'Lexend', sans-serif;
         border-radius: 12px;
         width: calc(100% - 15px);
         aspect-ratio: 1;
@@ -72,6 +74,7 @@
     }
 
     .element:hover {
+        font-family: 'Lexend', sans-serif;
         background-color: #3b3b5b;
         transform: translateY(-5px);
         cursor: pointer;
@@ -79,6 +82,7 @@
     }
 
     .element strong {
+        font-family: 'Lexend', sans-serif;
         display: block;
         font-size: 1.2rem;
         margin-bottom: 5px;
@@ -86,18 +90,20 @@
     }
 
     .element .atomic-number {
+        font-family: 'Lexend', sans-serif;
         font-size: 0.8rem;
-        color: #bbbbbb;
+        color: #ffffff;
         margin-bottom: 5px; /* Space between atomic number and symbol */
     }
 
     .element small {
         font-size: 0.8rem;
-        color: #bbbbbb;
+        color: #ffffff;
     }
 
     /* Tooltip Styling */
     .element[tooltip]:hover::before {
+        font-family: 'Lexend', sans-serif;
         content: attr(tooltip);
         position: absolute;
         bottom: 100%;
@@ -113,6 +119,7 @@
     }
 
     .element[tooltip]:hover::after {
+        font-family: 'Lexend', sans-serif;
         content: "";
         position: absolute;
         bottom: 100%;
@@ -126,6 +133,7 @@
     }
 
     .key {
+        font-family: 'Lexend', sans-serif;
         margin: 20px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -134,6 +142,7 @@
     }
 
     .key-item {
+        font-family: 'Lexend', sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -146,6 +155,12 @@
         margin-right: 2px;
     }
 </style>
+
+<svelte:head>
+    <title>
+        The Periodic Table
+    </title>
+</svelte:head>
 
 <div class="title">The Periodic Table</div>
 
