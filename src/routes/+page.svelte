@@ -93,7 +93,7 @@
         font-family: 'Lexend', sans-serif;
         font-size: 0.8rem;
         color: #ffffff;
-        margin-bottom: 5px; /* Space between atomic number and symbol */
+        margin-bottom: 5px;
     }
 
     .element small {
@@ -101,7 +101,6 @@
         color: #ffffff;
     }
 
-    /* Tooltip Styling */
     .element[tooltip]:hover::before {
         font-family: 'Lexend', sans-serif;
         content: attr(tooltip);
